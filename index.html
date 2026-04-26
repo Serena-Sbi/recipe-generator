@@ -8,7 +8,25 @@
   </head>
 
   <body>
-    <h1>🍝 AI Recipe Generator</h1>
+    <header><h1>🍝 AI Recipe Generator</h1></header>
+    <main>
+      <p>
+        Welcome to the AI Recipe Generator! This tool uses artificial
+        intelligence to create delicious recipes based on your preferences.
+      </p>
+      <form id="recipe-form">
+        <label for="ingredients">Enter your ingredients:</label><br />
+        <input
+          type="text"
+          id="ingredients"
+          name="ingredients"
+          placeholder="e.g., chicken, tomatoes, garlic"
+          required
+        /><br />
+        <button type="submit">Generate Recipe</button>
+      </form>
+      <div id="recipe-result"></div>
+    </main>
     <p>If you can see this, your HTML is working ✅</p>
 
     <button onclick="alert('It works! 🎉')">Click me</button>
