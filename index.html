@@ -8,40 +8,44 @@
   </head>
 
   <body>
-    <header><h1>🍝 AI Recipe Generator</h1></header>
-    <main>
-      <p>
-        Welcome to the AI Recipe Generator! This tool uses artificial
-        intelligence to create delicious recipes based on your preferences.
-      </p>
-      <form id="recipe-form">
-        <label for="ingredients">Enter your ingredients:</label><br />
-        <input
-          type="text"
-          id="ingredients"
-          name="ingredients"
-          placeholder="e.g., chicken, tomatoes, garlic"
-          required
-        /><br />
-        <button type="submit">Generate Recipe</button>
-      </form>
-      <div id="recipe-result"></div>
-    </main>
-    <p>If you can see this, your HTML is working ✅</p>
+    <div class="container">
+      <header><h1>🍝 AI Recipe Generator</h1></header>
+      <main>
+        <p>
+          Welcome to the AI Recipe Generator! This tool uses artificial
+          intelligence to create delicious recipes based on your preferences.
+        </p>
+        <form id="recipe-form">
+          <label for="ingredients">Enter your ingredients:</label><br />
+          <input
+            type="text"
+            id="ingredients"
+            name="ingredients"
+            placeholder="e.g., chicken, tomatoes, garlic"
+            required
+            class="instructions"
+          /><br />
+          <button type="submit" class="submit-button">Generate Recipe</button>
+        </form>
+        <div id="recipe-result" class="recipe"></div>
+        ecco la ricetta Ricetta generata: <span id="generated-recipe"></span>
+      </main>
+      <p>If you can see this, your HTML is working ✅</p>
 
-    <button onclick="alert('It works! 🎉')">Click me</button>
-    <footer>
-      This was coded by Serena Smeazzetto and is open sourced in github
-      <a href="https://github.com/Serena-Sbi/recipe-generator" target="_blank"
-        >here</a
-      >
-      and is hosted on Netlify
-      <a href="https://recipe-sbi-generator.netlify.app/" target="_blank"
-        >here</a
-      >.
+      <button onclick="alert('It works! 🎉')">Click me</button>
+      <footer>
+        This was coded by Serena Smeazzetto and is open sourced in github
+        <a href="https://github.com/Serena-Sbi/recipe-generator" target="_blank"
+          >here</a
+        >
+        and is hosted on Netlify
+        <a href="https://recipe-sbi-generator.netlify.app/" target="_blank"
+          >here</a
+        >.
 
-      <p>&copy; 2026 AI Recipe Generator. All rights reserved.</p>
-    </footer>
+        <p>&copy; 2026 AI Recipe Generator. All rights reserved.</p>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
